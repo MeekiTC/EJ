@@ -1,0 +1,238 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Heebo', sans-serif;
+}
+
+header{
+    position: fixed;
+    background:#daffc5;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.parte_izquierda h3{
+    color:#072a16;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.parte_izquierda span{
+    color:rgb(42, 94, 0);
+}
+
+.logout_btn{
+    padding: 5px;
+    background: rgb(133, 216, 85);
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color:rgb(7, 81, 0);
+    transition: 0,5s;
+    transition-property:background;
+}
+
+.logout_btn:hover {
+    background:#dfd111;
+}
+
+.sidebar{
+    background:rgba(6, 150, 68, 0.663);
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.sidebar .profile_image{
+    width:100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar h4{
+    color:#056458;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color:rgb(255, 255, 255);
+    display: block;
+    width:100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar a:hover{
+    background: #06642f;
+}
+
+.sidebar i{
+    padding-right: 10px;
+}
+
+label #sidebar_btn{
+    z-index:1;
+    color:#147208;
+    position:fixed;
+    cursor: pointer;
+    left:300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover{
+    color:#dfd111;
+}
+
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+.content{
+    margin-left: 250px;
+    background: url(https://metode.cat/wp-content/uploads/2020/03/104-arbres-natura-a-la-ciutat-.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    transition:0.5s;
+
+}
+
+#check:checked ~ .content{
+    margin-left: 60px;
+}
+
+#check{
+    display: none;
+}
+
+.segundo_titulo{
+    text-align:center;
+}
+
+.parrafo_1{
+    text-align:center;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Jost', sans-serif;
+}
+
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow:hidden;
+}
+
+.slider ul {
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 200%;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+
+.videos{
+    width: 100%;
+    margin:20%;
+    display:flex;
+    grid-template-columns: repeat(auto-fit,minmax(18rem, 1fr));
+    grid-gap: 2rem;
+}
